@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body class="bg-[#14141d]">
+
+    <div class="px-8 lg:px-20 ">
+        <header class="flex items-center justify-between mt-4 ">
+      <img class="cursor-pointer w-40 lg:w-56" src="logo.png" alt="">
+
+      <div id="" class="nav-links duration-500 lg:static absolute bg-[#14141d] text-white left-0  lg:min-h-fit min-h-[25vh] w-full top-[-50%] lg:w-auto flex px-5">
+        <nav class="">
+          <ul class=" lg:flex   gap-8 lg:flex-row flex-col bg-[#14141d] ">
+            <li class="mt-2"><a href="./index.html"          class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Home</a> </li>
+            <li class="mt-2"><a href="./about.html"          class="text-gray-400 hover:text-white duration-500 cursor-pointer ">About Us</a></li>
+            <li class="mt-2"><a href="./work.html"           class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Work</a> </li>
+            <li class="mt-2"><a href="./galllery.html"       class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Gallery</a></li>
+            <li class="mt-2"><a href="./team.html"                      class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Team</a></li>
+            <li class="mt-2"><a href=""           class="text-white duration-500 cursor-pointer ">Blog</a></li>
+            
+          </ul>
+        </nav>
+      </div>
+
+      <button
+        class="hidden lg:flex  bg-gray-300 text-black  py-2 px-7 font-serif hover:text-white hover:bg-transparent duration-500 border border-white">CONTACT
+      </button>
+
+
+      <i onclick="onToggleMenu(this)" class='bx bx-menu lg:hidden text-xl lg:text-[2rem] text-white' name="menu"></i>
+
+    </header>
+
+
+    <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+      }
+    </script>
+    
+    <div>
+        <h1 class="text-white font-bold md:text-3xl lg:text-5xl mt-24 text-center">OUR LATEST BLOG</h1>
+    </div>
+    
+    
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-28">
+        <div class="text-white  ">
+          <h2 class="leading-10  text-gray-400">January 21, 2022</h2>
+          <h1>EXPLORING UNIQUE STORIES AND TECHNIQUES IN PHOTOGRAPHY</h1>
+          <img class="my-6" src="15th.png" alt="">
+          <h2 class=" text-gray-400">Our mission is to uncover the distinctive stories and techniques that make each
+            image an extraordinary</h2>
+          <h1 class="mt-6">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+        </div>
+
+        <div class="text-white  ">
+          <h2 class="leading-10 text-gray-400">November 25, 2023</h2>
+          <h1>ECHOING LIFELONG STORIES THROUGH TIMELESS PHOTOGRAPHY
+          </h1>
+          <img class="my-6" src="16th.png" alt="">
+          <h2 class=" text-gray-400">Step into a world where every click of the shutter captures not just a moment,
+            but
+            a narrative that</h2>
+          <h1 class="mt-6">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse duration-0'></i>
+          </h1>
+        </div>
+
+        <div class="text-white  ">
+          <h2 class="leading-10  text-gray-400">May 1, 2024</h2>
+          <h1>EMBARKING ON LIFE'S JOURNEY THROUGH IMAGES THAT TELL STORIES</h1>
+          <img class="my-6" src="17th.png" alt="">
+          <h2 class=" text-gray-400">Join us as we embark on a visual odyssey, capturing the essence of life's journey
+            through compelling</h2>
+
+          <h1 class="mt-6 ">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+
+        </div>
+
+        <div class="text-white  ">
+            <h2 class="leading-10  text-gray-400">January 21, 2022</h2>
+            <h1>EXPLORING UNIQUE STORIES AND TECHNIQUES IN PHOTOGRAPHY</h1>
+            <img class="my-6" src="15th.png" alt="">
+            <h2 class=" text-gray-400">Our mission is to uncover the distinctive stories and techniques that make each
+              image an extraordinary</h2>
+            <h1 class="mt-6">READ MORE<i
+                class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+          </div>
+  
+          <div class="text-white  ">
+            <h2 class="leading-10 text-gray-400">November 25, 2023</h2>
+            <h1>ECHOING LIFELONG STORIES THROUGH TIMELESS PHOTOGRAPHY
+            </h1>
+            <img class="my-6" src="16th.png" alt="">
+            <h2 class=" text-gray-400">Step into a world where every click of the shutter captures not just a moment,
+              but
+              a narrative that</h2>
+            <h1 class="mt-6">READ MORE<i
+                class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse duration-0'></i>
+            </h1>
+          </div>
+  
+          <div class="text-white  ">
+            <h2 class="leading-10  text-gray-400">May 1, 2024</h2>
+            <h1>EMBARKING ON LIFE'S JOURNEY THROUGH IMAGES THAT TELL STORIES</h1>
+            <img class="my-6" src="17th.png" alt="">
+            <h2 class=" text-gray-400">Join us as we embark on a visual odyssey, capturing the essence of life's journey
+              through compelling</h2>
+  
+            <h1 class="mt-6 ">READ MORE<i
+                class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+  
+          </div>
+
+
+      </div>
+
+
+      
+
+    </div>
+
+
+    <footer class="bg-[#1e1e2b]  mt-32 pt-16 pb-5 px-10 text-center ">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  ">
+          <div class="">
+            <img class="text-white" src="logo.png" alt="">
+            <h1 class="text-gray-300  mt-4 text-left">Thank you for exploring our world through the lens. From capturing
+              cherished
+              memories to unveiling the beauty of the everyday, our passion for photography drives us to preserve
+              moments that matter. Let our images speak volumes and weave stories that endure. Contact us to embark on
+              your visual journey today.</h1>
+    
+            <div class=" mt-6 mr-[14rem] lg:mr-0 flex cursor-pointer gap-3">
+    
+              <i class='md:mt-3  text-white text-2xl bx bxl-instagram-alt'></i>
+              <i class='md:mt-3  text-white text-2xl bx bxl-twitter'></i>
+              <i class='md:mt-3  text-white text-2xl bx bxl-facebook-circle'></i>
+            </div>
+          </div>
+          <div class="text-gray-400 capitalize leading-10 md:ml-24 lg:ml-56 text-left  ">
+            <p class="mt-8 cursor-pointer hover:text-white duration-300">home</p>
+            <p class="cursor-pointer hover:text-white duration-300">About</p>
+            <p class="cursor-pointer hover:text-white duration-300">work</p>
+            <p class="cursor-pointer hover:text-white duration-300">deatils</p>
+            <p class="cursor-pointer hover:text-white duration-300">gallery</p>
+          </div>
+    
+    
+          <div class="text-gray-400 capitalize leading-10 lg:ml-28 text-left">
+            <p class="mt-8 cursor-pointer hover:text-white duration-300">blog</p>
+            <p class="cursor-pointer hover:text-white duration-300">blog post</p>
+            <p class="cursor-pointer hover:text-white duration-300">team</p>
+            <p class="cursor-pointer hover:text-white duration-300">team deatails</p>
+            <p class="cursor-pointer hover:text-white duration-300">Contact</p>
+          </div>
+    
+          <div class="text-gray-400 capitalize md:ml-24 leading-10 text-left">
+            <p class="mt-8 cursor-pointer hover:text-white duration-300">Style Guide</p>
+            <p class="cursor-pointer hover:text-white duration-300">Password Protected</p>
+            <p class="cursor-pointer hover:text-white duration-300">Licenses</p>
+            <p class="cursor-pointer hover:text-white duration-300">Changelog</p>
+            <p class="cursor-pointer hover:text-white duration-300">404 Not Found</p>
+          </div>
+    
+        </div>
+    
+        <div class="mt-7 border-t-2 border-gray-700 text-center">
+    
+          <h1 class="text-gray-400 text-sm md:text-lg mt-3">Powered by <span class="text-white"> <a href="#">Webflow</a> |
+            </span> Designed by <span class="text-white"><a href="#"> Webcoean </a> </span></h1>
+        </div>
+    
+    
+    
+      </footer>

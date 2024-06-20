@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flashpoint</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#14141d]  ">
+
+  <div class="px-8 lg:px-28">
+
+    <header class="flex items-center justify-between mt-4 ">
+      <img class="cursor-pointer w-40 lg:w-56" src="logo.png" alt="">
+
+      <div id=""
+        class="nav-links duration-500 lg:static absolute bg-[#14141d] text-white left-0  lg:min-h-fit min-h-[25vh] w-full top-[-50%] lg:w-auto flex px-5">
+        <nav class="">
+          <ul class=" lg:flex   gap-8 lg:flex-row flex-col bg-[#14141d] ">
+            <li class="mt-2"><a href="./index.html" class="text-white duration-500 cursor-pointer ">Home</a> </li>
+            <li class="mt-2"><a href="./about.html"             class="text-gray-400 hover:text-white duration-500 cursor-pointer ">About Us</a></li>
+            <li class="mt-2"><a href="./work.html"    class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Work</a> </li>
+            <li class="mt-2"><a href="./galllery.html"             class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Gallery</a></li>
+            <li class="mt-2"><a href="./team.html"             class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Team</a></li>
+            <li class="mt-2"><a href="./blog.html"             class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button
+        class="hidden lg:flex  bg-gray-300 text-black  py-2 px-7 font-serif hover:text-white hover:bg-transparent duration-500 border border-white">CONTACT
+      </button>
+
+
+      <i onclick="onToggleMenu(this)" class='bx bx-menu lg:hidden text-xl lg:text-[2rem] text-white' name="menu"></i>
+
+    </header>
+
+
+    <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+      }
+    </script>
+   
+
+    <div>
+      <h1 class="text-white font-bold text-4xl lg:text-7xl text-center mt-28 lg:mt-40">EMBRACE THE MOMENTS A
+        JOURNEY THROUGH SPECIAL
+        MEMORIES</h1>
+    </div>
+    <marquee class=" text-white text-2xl font-bold  border-y-[1px] border-gray-700 mt-24  ">
+      <div id="marquee" class="flex gap-10  p-5 capitalize ">
+
+        <div class="items-center"> <i class='text-white bx bxs-leaf gap-2'></i>spring field</div>
+        <div>nairobia</div>
+        <div>vancouver</div>
+        <div>kansas</div>
+        <div>ararat</div>
+        <div>armsterdam</div>
+        <div>manalia</div>
+      </div>
+    </marquee>
+
+    <div class="block lg:flex  lg:gap-6  my-16 md:ml-40  lg:ml-0">
+      <img class="mt-8 " src="3rd.webp" alt="">
+      <img class="mt-8 " src="!st.webp" alt="">
+      <img class="mt-8 " src="2nd.webp" alt="">
+    </div>
+
+    <div>
+      <h1 class="text-white text-xl md:text-2xl lg:text-4xl font-bold">WHERE MOMENTS BECOME MEMORIES
+        YOUR PREMIER DESTINATION FOR
+        CAPTURING LIFE'S ESSEN</h1>
+    </div>
+
+    <div class="block lg:flex  justify-between my-10">
+      <div class="mt-12 lg:mt-56">
+        <p class="hidden lg:flex text-white">Specializing in Event Photography, Where Every Moment <br>Matters. Entrust
+          Us with Your
+          Milestones and Let Us Capture <br> the Magic and Emotions, Creating Timeless Memories.</p>
+        <p class="lg:hidden text-white">Specializing in Event Photography, Where Every Moment Matters. Entrust Us with
+          Your
+          Milestones and Let Us Capture the Magic and Emotions, Creating Timeless Memories.</p>
+
+        <button
+          class="bg-gray-300 text-black mt-6  py-2 px-7 font-serif hover:text-white hover:bg-transparent duration-500 border border-white">ABOUT
+          US </button>
+      </div>
+
+      <div class="block lg:flex justify-around gap-6 mt-6 md:ml-32 lg:ml-0">
+        <img class="mt-10  lg:mt-0" src="4th.webp" alt="">
+        <img class="mt-10  lg:mt-0" src="5th.webp" alt="">
+      </div>
+    </div>
+
+    <div>
+      <h1 class="text-white font-bold text-2xl lg:text-4xl text-center my-32">UNLOCK THE POSSIBILITIES WITH US
+        EXPLORE OUR SERVICES</h1>
+    </div>
+
+    <div class=" grid lg:grid-cols-3 grid-flow-row gap-8 my-12 md:grid-cols-2">
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class='text-2xl bx bxs-star'></i>
+        <h1 class="text-2xl font-semibold my-4">WEDDING PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class=' text-2xl bx bxs-purchase-tag'></i>
+        <h1 class="text-2xl font-semibold my-4">EVENT PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class='text-2xl bx bxs-spray-can'></i>
+        <h1 class="text-2xl font-semibold my-4">INDUSTRY PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class=' text-2xl bx bxs-school'></i>
+        <h1 class="text-2xl font-semibold my-4">FASHION PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class=' text-2xl text-2xl bx bxs-star'></i>
+        <h1 class="text-2xl font-semibold my-4">BIRTH DAY PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+
+      <div
+        class="text-white bg-[#1e1e2b] p-6 inline-block border border-1 border-gray-500 rounded-lg hover:scale-110 duration-500">
+        <i class=' text-2xl bx bxs-layout'></i>
+        <h1 class="text-2xl font-semibold my-4">PRODUCT PHOTOGRAPHY</h1>
+        <p class="leading-6 text-gray-300 mt-" 5> Capture your special day with timeless <br> elegance. Professional
+          photography services <br> for weddings. Book now for lasting memories.</p>
+      </div>
+
+
+    </div>
+
+    <div class="my-28 flex justify-between items-center">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">OUR WORK</h1>
+      <button
+        class="bg-gray-300 text-black mt-6  py-1 lg:py-2 px-4 lg:px-7 text-lg lg:text-xl font-serif  hover:text-white hover:bg-transparent duration-500 border border-white">ALL
+        WORK</button>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-5 mb-20 ">
+
+      <img class=" lg:row-span-2" src="6th.png" alt="">
+
+
+      <img src="7th.png" alt="">
+      <img src="8th.png" alt="">
+      <img src="9th.png" alt="">
+      <img src="10th.png" alt="">
+    </div>
+
+    <div class="my-36">
+      <h1 class="text-white text-4xl font-bold ">WHY CHOOSE US</h1>
+      <div class="block  lg:flex justify-between my-7">
+        <div>
+          <p class="text-gray-400 w-full lg:w-2/3 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in
+            eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
+            diam
+            libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+            risus tristique posuere. </p>
+        </div>
+        <div class="flex items-end">
+          <button
+            class="bg-gray-300 text-black  lg:w-40 p-1 lg:p-3 mt-6 lg:mt-0 font-serif hover:text-white hover:bg-transparent duration-500 border border-white">CONTACT
+            US
+          </button>
+        </div>
+      </div>
+
+      <div class=" block lg:flex justify-between gap-10 my-24 lg:my-32">
+        <img class="md:ml-9" src="11th.webp" alt="">
+        <p class="text-gray-400  text-left flex items-center mt-8 lg:mt-0">Photography offers a unique way to document
+          and share
+          experiences, emotions, and stories. Whether it's the delicate pattern of raindrops on a leaf, the vibrant
+          colors of a bustling street market, or the subtle expressions on a loved one's face, photography allows us to
+          capture
+          the beauty and complexity of life in stunning detail.Moreover, photographs have the remarkable ability to
+          evoke
+          memories and emotions long after the moment has passed. They serve as tangible reminders of our experiences,
+          serving as windows into the past and portals to different worlds.In essence, choosing photography to capture
+          details is a way of honoring the richness and diversity of our world, celebrating the beauty of everyday
+          moments, and preserving memories for generations to come.</p>
+      </div>
+
+      <div
+        class="bg-[#1e1e2b] text-white font-bold block lg:flex justify-between text-center p-9 mt-10 items-center text-xl">
+        <div>OUR IMPACT NUMBER</div>
+        <div class="mt-4 lg:mt-0">200+ <br>
+          <span class="font-thin"> Complete </span>
+        </div>
+        <div class="mt-4 lg:mt-0">10+ <br>
+          <span class="font-thin"> of Experience</span>
+        </div>
+        <div class="mt-4 lg:mt-0">3000+ <br>
+          <span class="font-thin"> Happy clients </span>
+        </div>
+        <div class="mt-4 lg:mt-0">
+          4.8 <br>
+          <span class="font-thin"> Rates</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between items-center ">
+        <h1 class="text-xl md:text-4xl lg:text-5xl  font-bold text-white ">OUR PHOTOGRAPY TEAM</h1>
+        <button
+          class="bg-gray-300 md:text-lg text-black text-sm p-1 lg:py-2 lg:px-7 lg:text-xl font-serif  hover:text-white hover:bg-transparent duration-500 border border-white">
+          ALL TEAM</button>
+      </div>
+
+      <div class=" grid lg:grid-cols-3 gap-6 my-24 md:grid-cols-2 ">
+        <img src="12.png" alt="">
+        <img src="13th.png" alt="">
+        <img src="14th.png" alt="">
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold text-white">OUR LATEST BLOG</h1>
+        <button
+          class="bg-gray-300 text-black  text-lg   lg:py-2 px-7 lg:text-xl font-serif  hover:text-white hover:bg-transparent duration-500 border border-white">
+          ALL BLOG</button>
+      </div>
+
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 my-28">
+        <div class="text-white  ">
+          <h2 class="leading-10  text-gray-400">January 21, 2022</h2>
+          <h1>EXPLORING UNIQUE STORIES AND TECHNIQUES IN PHOTOGRAPHY</h1>
+          <img class="my-6" src="15th.png" alt="">
+          <h2 class=" text-gray-400">Our mission is to uncover the distinctive stories and techniques that make each
+            image an extraordinary</h2>
+          <h1 class="mt-6">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+        </div>
+
+        <div class="text-white  ">
+          <h2 class="leading-10 text-gray-400">November 25, 2023</h2>
+          <h1>ECHOING LIFELONG STORIES THROUGH TIMELESS PHOTOGRAPHY
+          </h1>
+          <img class="my-6" src="16th.png" alt="">
+          <h2 class=" text-gray-400">Step into a world where every click of the shutter captures not just a moment,
+            but
+            a narrative that</h2>
+          <h1 class="mt-6">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse duration-0'></i>
+          </h1>
+        </div>
+
+        <div class="text-white  ">
+          <h2 class="leading-10  text-gray-400">May 1, 2024</h2>
+          <h1>EMBARKING ON LIFE'S JOURNEY THROUGH IMAGES THAT TELL STORIES</h1>
+          <img class="my-6" src="17th.png" alt="">
+          <h2 class=" text-gray-400">Join us as we embark on a visual odyssey, capturing the essence of life's journey
+            through compelling</h2>
+
+          <h1 class="mt-6 ">READ MORE<i
+              class='text-white text-3xl align-middle ml-2  bx bx-chevrons-right hover:animate-pulse'></i></h1>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="bg-[#1e1e2b] block  p-10 md:pb-8  lg:flex mb-12  lg:mx-12">
+      <img src="a2.svg" alt="">
+      <div class="my-auto">
+
+        <h1 class="text-white mt-7 md:text-2xl md:mt-5 md:p-3 lg:text-4xl font-bold mb-6 text-left ">BOOK OUR EXCLUSIVE
+          EVENT SERVICES AT LEAST 1 MONTH
+          IN ADVANCE TO SECURE YOUR DATE</h1>
+        <button
+          class="bg-gray-300 text-black md:ml-3 p-1  lg:px-7 lg:py-2 font-serif hover:text-white hover:bg-[#1a0132] duration-500 border border-white">BOOK
+          NOW
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <footer class="bg-[#1e1e2b]  mt-32 pt-16 pb-5 px-10 text-center ">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  ">
+      <div class="">
+        <img class="text-white" src="logo.png" alt="">
+        <h1 class="text-gray-300  mt-4 text-left">Thank you for exploring our world through the lens. From capturing
+          cherished
+          memories to unveiling the beauty of the everyday, our passion for photography drives us to preserve
+          moments that matter. Let our images speak volumes and weave stories that endure. Contact us to embark on
+          your visual journey today.</h1>
+
+        <div class=" mt-6 mr-[14rem] lg:mr-0 flex cursor-pointer gap-3">
+
+          <i class='md:mt-3  text-white text-2xl bx bxl-instagram-alt'></i>
+          <i class='md:mt-3  text-white text-2xl bx bxl-twitter'></i>
+          <i class='md:mt-3  text-white text-2xl bx bxl-facebook-circle'></i>
+        </div>
+      </div>
+      <div class="text-gray-400 capitalize leading-10 md:ml-24 lg:ml-56 text-left  ">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">home</p>
+        <p class="cursor-pointer hover:text-white duration-300">About</p>
+        <p class="cursor-pointer hover:text-white duration-300">work</p>
+        <p class="cursor-pointer hover:text-white duration-300">deatils</p>
+        <p class="cursor-pointer hover:text-white duration-300">gallery</p>
+      </div>
+
+
+      <div class="text-gray-400 capitalize leading-10 lg:ml-28 text-left">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">blog</p>
+        <p class="cursor-pointer hover:text-white duration-300">blog post</p>
+        <p class="cursor-pointer hover:text-white duration-300">team</p>
+        <p class="cursor-pointer hover:text-white duration-300">team deatails</p>
+        <p class="cursor-pointer hover:text-white duration-300">Contact</p>
+      </div>
+
+      <div class="text-gray-400 capitalize md:ml-24 leading-10 text-left">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">Style Guide</p>
+        <p class="cursor-pointer hover:text-white duration-300">Password Protected</p>
+        <p class="cursor-pointer hover:text-white duration-300">Licenses</p>
+        <p class="cursor-pointer hover:text-white duration-300">Changelog</p>
+        <p class="cursor-pointer hover:text-white duration-300">404 Not Found</p>
+      </div>
+
+    </div>
+
+    <div class="mt-7 border-t-2 border-gray-700 text-center">
+
+      <h1 class="text-gray-400 text-sm md:text-lg mt-3">Powered by <span class="text-white"> <a href="#">Webflow</a> |
+        </span> Designed by <span class="text-white"><a href="#"> Webcoean </a> </span></h1>
+    </div>
+
+
+
+  </footer>
+
+
+</body>
+
+</html>

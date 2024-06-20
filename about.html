@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#14141d]">
+
+  <div class="px-8 lg:px-28">
+
+
+
+    <header class="flex items-center justify-between mt-4 ">
+      <img class="cursor-pointer w-40 lg:w-56" src="logo.png" alt="">
+
+      <div id=""
+        class="nav-links duration-500 lg:static absolute bg-[#14141d] text-white left-0  lg:min-h-fit min-h-[25vh] w-full top-[-50%] lg:w-auto flex px-5">
+        <nav class="">
+          <ul class=" lg:flex   gap-8 lg:flex-row flex-col bg-[#14141d] ">
+            <li class="mt-2"><a href="./index.html"            class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Home</a> </li>
+            <li class="mt-2"><a href=""                        class="text-white duration-500 cursor-pointer ">About Us</a></li>
+            <li class="mt-2"><a href="./work.html"               class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Work</a> </li>
+            <li class="mt-2"><a href="./galllery.html"         class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Gallery</a></li>
+            <li class="mt-2"><a href="./team.html"                        class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Team</a></li>
+            <li class="mt-2"><a href="./blog.html"                        class="text-gray-400 hover:text-white duration-500 cursor-pointer ">Blog</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button
+        class="hidden lg:flex  bg-gray-300 text-black  py-2 px-7 font-serif hover:text-white hover:bg-transparent duration-500 border border-white">CONTACT
+      </button>
+
+
+      <i onclick="onToggleMenu(this)" class='bx bx-menu lg:hidden text-xl lg:text-[2rem] text-white' name="menu"></i>
+
+    </header>
+
+
+    <script>
+      const navLinks = document.querySelector('.nav-links')
+      function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+      }
+    </script>
+
+
+
+
+
+
+
+
+    <div class="text-white font-bold text-xl md:text-3xl w-full lg:text-4xl lg:w-2/4 mt-36 ">
+      <h1>WE BELIEVE IN THE IMPORTANCE OF EACH AND EVERY MOMENT</h1>
+    </div>
+
+
+    <div class="block lg:flex mt-14 ">
+      <div>
+        <img class="w-full lg:w-[80rem]" src="a1.png" alt="">
+      </div>
+
+      <div class="  lg:ml-52">
+
+        <div class="text-white text-sm  lg:text-xl  mt-7 lg:mt-0 font-bold flex md:block lg:flex  ">
+          <button class="bg-transparent hover:bg-[#1e1e2b] border-1 border-white px-6 py-3 "
+            onclick="showParagraph('paragraph1')">OUR STORY</button>
+          <button class="bg-transparent hover:bg-[#1e1e2b] border-1 border-white px-6 py-3 "
+            onclick="showParagraph('paragraph2')">OUR MISSION</button>
+          <button class="bg-transparent hover:bg-[#1e1e2b] border-1 border-white px-6 py-3 "
+            onclick="showParagraph('paragraph3')">OUR GOAL</button>
+        </div>
+
+        <div class="smallimg text-white mt-5 lg:mt-16 ">
+          <div id="paragraph1">
+            <p>Lorem mani ipsum, dolor sit amet consectetur adipisicing elit. Cumque accusamus molestias corrupti ut!
+              Exercitationem, assumenda? Voluptatibus ea repudiandae velit blanditiis ex, rem expedita! Modi dolor quis
+              ad ipsum? Sapiente, enim?</p>
+          </div>
+          <div id="paragraph2">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, delectus. Enim cumque nobis tenetur odio
+              eaque ipsam quia, illo eligendi. Lorem hari ipsum dolor sit, amet consectetur adipisicing elit. Et dolore
+              deleniti eaque,</p>
+          </div>
+          <div id="paragraph3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem iste repellat optio, ab explicabo
+              eius quam nesciunt ea ipsa facere quasi provident maiores nostrum cum sunt ipsum voluptatum. Numquam,
+              dolorem!</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+      function showParagraph(paragraphId) {
+        var paragraphs = document.querySelectorAll('.smallimg div');
+        for (var i = 0; i < paragraphs.length; i++) {
+          paragraphs[i].style.display = 'none';
+        }
+        document.getElementById(paragraphId).style.display = 'block';
+      }
+    </script>
+
+
+    <div
+      class="bg-[#1e1e2b] text-white font-bold block lg:flex justify-between text-center p-9 my-32 items-center text-xl">
+      <div>OUR IMPACT NUMBER</div>
+      <div class="mt-4 lg:mt-0">200+ <br>
+        <span class="font-thin"> Complete </span>
+      </div>
+      <div class="mt-4 lg:mt-0">10+ <br>
+        <span class="font-thin"> of Experience</span>
+      </div>
+      <div class="mt-4 lg:mt-0">3000+ <br>
+        <span class="font-thin"> Happy clients </span>
+      </div>
+      <div class="mt-4 lg:mt-0">
+        4.8 <br>
+        <span class="font-thin"> Rates</span>
+      </div>
+    </div>
+
+
+    <div>
+      <h1 class=" text-2xl md:text-3xl lg:text-4xl text-center font-bold text-white">AWARD AND RECOGNITIONS</h1>
+    </div>
+
+
+    <div class="block md:grid grid-cols-2 lg:flex   gap-10 my-14 text-center">
+
+      <div class="bg-[#1e1e2b] mt-10 p-4 md:p-8 hover:scale-110 duration-500">
+        <h1 class="bg-slate-400 text-black font-bold text-3xl p-4 lg:p-8 text-center rounded-full ">2021</h1>
+        <h1 class="text-white font-bold text-2xl mt-6 ">SHUTTER ARTISTRY TROPHY</h1>
+        <p class="text-gray-400 mt-5">Recognizing photographers who demonstrate exceptional creativity, technical skill,
+          and artistry in their craft. Celebrating innovation behind the lens.</p>
+      </div>
+
+
+      <div class="bg-[#1e1e2b] mt-10 p-4 md:p-8 hover:scale-110 duration-500">
+        <h1 class="bg-slate-400 text-black font-bold text-3xl p-4 lg:p-8 text-center rounded-full">2022</h1>
+        <h1 class="text-white font-bold text-2xl mt-6">LIGHT AND COMPOSITION MERIT</h1>
+        <p class="text-gray-400 mt-5">Recognizing photographers who demonstrate exceptional creativity, technical skill,
+          and artistry in their craft. Celebrating innovation behind the lens.</p>
+      </div>
+
+
+
+      <div class="bg-[#1e1e2b] mt-10 p-4 md:p-8 hover:scale-110 duration-500">
+        <h1 class="bg-slate-400 text-black font-bold text-3xl p-4 lg:p-8 text-center rounded-full">2023</h1>
+        <h1 class="text-white font-bold text-2xl mt-6">SHUTTER ARTISTRY TROPHY</h1>
+        <p class="text-gray-400 mt-5">Recognizing photographers who demonstrate exceptional creativity, technical skill,
+          and artistry in their craft. Celebrating innovation behind the lens.</p>
+      </div>
+
+    </div>
+
+    <marquee class=" text-white text-2xl font-bold  border-y-[1px] border-gray-700 my-24  ">
+      <div id="marquee" class="flex gap-10  p-5 capitalize ">
+
+        <div class="items-center"> <i class='text-white bx bxs-leaf gap-2'></i>spring field</div>
+        <div>nairobia</div>
+        <div>vancouver</div>
+        <div>kansas</div>
+        <div>ararat</div>
+        <div>armsterdam</div>
+        <div>manalia</div>
+      </div>
+    </marquee>
+
+
+    <div class="bg-[#1e1e2b] block  p-10 md:pb-8  lg:flex mb-12  lg:mx-12">
+      <img src="a2.svg" alt="">
+      <div class="my-auto">
+
+        <h1 class="text-white mt-7 md:text-2xl md:mt-5 md:p-3  lg:text-4xl font-bold mb-6 text-left ">BOOK OUR EXCLUSIVE
+          EVENT SERVICES AT LEAST 1 MONTH
+          IN ADVANCE TO SECURE YOUR DATE</h1>
+        <button
+          class="bg-gray-300 text-black md:ml-3 p-1  lg:px-7 lg:py-2 font-serif hover:text-white hover:bg-[#1a0132] duration-500 border border-white">BOOK
+          NOW
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <footer class="bg-[#1e1e2b]  mt-32 pt-16 pb-5 px-10 text-center ">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  ">
+      <div class="">
+        <img class="text-white" src="logo.png" alt="">
+        <h1 class="text-gray-300  mt-4 text-left">Thank you for exploring our world through the lens. From capturing
+          cherished
+          memories to unveiling the beauty of the everyday, our passion for photography drives us to preserve
+          moments that matter. Let our images speak volumes and weave stories that endure. Contact us to embark on
+          your visual journey today.</h1>
+
+        <div class=" mt-6 mr-[14rem] lg:mr-0 flex cursor-pointer gap-3">
+
+          <i class='md:mt-3  text-white text-2xl bx bxl-instagram-alt'></i>
+          <i class='md:mt-3  text-white text-2xl bx bxl-twitter'></i>
+          <i class='md:mt-3  text-white text-2xl bx bxl-facebook-circle'></i>
+        </div>
+      </div>
+      <div class="text-gray-400 capitalize leading-10 md:ml-24 lg:ml-56 text-left  ">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">home</p>
+        <p class="cursor-pointer hover:text-white duration-300">About</p>
+        <p class="cursor-pointer hover:text-white duration-300">work</p>
+        <p class="cursor-pointer hover:text-white duration-300">deatils</p>
+        <p class="cursor-pointer hover:text-white duration-300">gallery</p>
+      </div>
+
+
+      <div class="text-gray-400 capitalize leading-10 lg:ml-28 text-left">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">blog</p>
+        <p class="cursor-pointer hover:text-white duration-300">blog post</p>
+        <p class="cursor-pointer hover:text-white duration-300">team</p>
+        <p class="cursor-pointer hover:text-white duration-300">team deatails</p>
+        <p class="cursor-pointer hover:text-white duration-300">Contact</p>
+      </div>
+
+      <div class="text-gray-400 capitalize md:ml-24 leading-10 text-left">
+        <p class="mt-8 cursor-pointer hover:text-white duration-300">Style Guide</p>
+        <p class="cursor-pointer hover:text-white duration-300">Password Protected</p>
+        <p class="cursor-pointer hover:text-white duration-300">Licenses</p>
+        <p class="cursor-pointer hover:text-white duration-300">Changelog</p>
+        <p class="cursor-pointer hover:text-white duration-300">404 Not Found</p>
+      </div>
+
+    </div>
+
+    <div class="mt-7 border-t-2 border-gray-700 text-center">
+
+      <h1 class="text-gray-400 text-sm md:text-lg mt-3">Powered by <span class="text-white"> <a href="#">Webflow</a> |
+        </span> Designed by <span class="text-white"><a href="#"> Webcoean </a> </span></h1>
+    </div>
+
+
+
+  </footer>
+
+</body>
+
+</html>
